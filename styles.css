@@ -1,0 +1,645 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic Styling */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header .nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .header .nav a:hover {
+    color: #6200ea;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #fce8e6;
+  }
+  
+  .hero-text {
+    text-align: right; /* Aligns text to the right */
+    padding: 70px 80px; /* Padding for the container */
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.hero-text p {
+    font-size: 1rem;
+    margin-bottom: 20px; /* Space below the paragraph */
+    color: #666;
+}
+
+/* Read More Button Styling */
+.read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white; /* Primary color */
+    color: rgb(98, 51, 51);
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #a4a8ac; /* Darker shade for hover */
+  }
+
+  
+  .hero-image {
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center; /* Centers the image vertically */
+    margin: 90px;
+    position: relative; /* Allows for absolute positioning of the pseudo-element */
+}
+
+.hero-image:before {
+    content: '';
+    position: absolute;
+    width: 360px; /* Size of the circular background */
+    height: 360px; /* Same as width for a circle */
+    border-radius: 50%; /* Makes the background circular */
+    background-color: rgba(255, 255, 255, 0.5); /* Background color with some transparency */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect for the background */
+    z-index: -1; /* Places the background behind the image */
+}
+
+.hero-image img {
+    width: 330px; /* Ensures the width is set */
+    height: 330px; /* Set to the same value as width for a circle */
+    border-radius: 50%; /* Makes the image circular */
+    padding: 6px; /* Padding around the image */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect for the image */
+}
+
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat p {
+    font-size: 1rem;
+  }
+  
+
+  /* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+.hero-content {
+    max-width: 50%;
+}
+.hero-content h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.hero-content h3 {
+    font-size: 1em;
+    color: blue;
+    padding-bottom: 30px;
+}
+.hero-content p {
+    margin-top: 10px;
+    color: #666;
+    padding-bottom: 20px;
+}
+.hero-content .button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    
+}
+.hero-images img {
+    width: 200px;
+    height: auto;
+    margin: 0 10px;
+    border-radius: 30px;
+}
+
+/* Services Section */
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.services h3 {
+    font-size: 1em;
+    color: blue;
+    padding-bottom: 30px;
+}
+
+
+.service-card {
+    text-align: center;
+}
+.service-card .icon {
+    font-size: 2em;
+    color: purple;
+}
+.service-card h3 {
+    margin-top: 10px;
+    color: #333;
+}
+.service-card p {
+    color: #666;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    padding: 50px;
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=600);
+    color: #fff;
+}
+.profile-section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.profile-section h2 {
+    margin-top: 20px;
+}
+.profile-section .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.card {
+    width: 30%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.card h3 {
+    margin-top: 15px;
+    color: #333;
+}
+.card p {
+    color: #666;
+    margin-top: 10px;
+}
+.card .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: red;
+    text-decoration: none;
+}
+
+/* Reset and general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Business Strength Section */
+.business-strength {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #1f1f2f;
+    color: #fff;
+}
+.business-strength .text-content {
+    max-width: 50%;
+}
+.business-strength .text-content h2 {
+    font-size: 2em;
+    color: #fff;
+}
+.business-strength .text-content p {
+    margin-top: 10px;
+    color: #b3b3b3;
+}
+.business-strength .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: purple;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.business-strength .image-content img {
+    width: 300px; /* Adjust as necessary */
+    height: 360px;
+    border-radius: 20px;
+    
+}
+
+/* General Footer Styles */
+footer {
+    background-color: #1f1f2f;
+    color: #b3b3b3;
+    padding: 40px 20px;
+    text-align: center;
+}
+.footer-section {
+    margin-bottom: 20px;
+}
+
+/* Header in Each Footer Section */
+.footer-section h4 {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Social Media Links Styling */
+.social-media a {
+    color: #b3b3b3;
+    font-size: 0.9em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin: 5px 10px; /* Spacing between links */
+    transition: color 0.3s;
+}
+.social-media a:hover {
+    color: #fff;
+}
+.social-media i {
+    font-size: 1.2em;
+    margin-right: 8px; /* Spacing between icon and text */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #666;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+}
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-media a {
+        display: block;
+        margin: 10px auto; /* Center align links on smaller screens */
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.button {
+    padding: 10px 15px;
+    background-color: #007BFF; /* Primary button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px 0;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.contact-form {
+    display: none; /* Hidden by default */
+    border: 1px solid #ccc; /* Border for the form */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact-form h2 {
+    margin-top: 0; /* No margin at the top */
+    color: #333; /* Darker text color for the heading */
+}
+
+label {
+    display: block; /* Labels on new line */
+    margin: 10px 0 5px; /* Spacing around labels */
+    color: #555; /* Medium gray for labels */
+}
+
+input, textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Inner spacing for inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing for text area */
+}
+
+button {
+    padding: 10px 15px; /* Inner spacing for buttons */
+    background-color: #28a745; /* Green color for submit button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+#closeFormButton {
+    background-color: #dc3545; /* Red color for close button */
+}
+
+#closeFormButton:hover {
+    background-color: #c82333; /* Darker shade on hover for close button */
+}
+
+
+/* Resources Section Styles */
+.resources {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px; /* Space around the section */
+    margin: 20px 0; /* Space above and below the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.resources h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.resources ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+.resources li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.resources a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007BFF; /* Link color */
+    font-weight: bold; /* Bold text for emphasis */
+    display: block; /* Make links full-width */
+    padding: 10px; /* Padding for better click area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth background change on hover */
+}
+
+.resources a:hover {
+    background-color: #007BFF; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.resources .button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: purple;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+
+/* Blog Section Styling */
+.blog-section {
+    padding: 4em 2em;
+    background-color: #f4f7f6;
+    text-align: center;
+}
+
+.blog-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5em;
+    color: #333;
+    font-weight: 700;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover img {
+    transform: scale(1.05);
+}
+
+.blog-card h3 {
+    font-size: 1.6em;
+    margin: 1em 0;
+    padding: 0 1.5em;
+    color: #333;
+    font-weight: 600;
+}
+
+.blog-card p {
+    padding: 0 1.5em 1.5em;
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.read-more {
+    display: inline-block;
+    margin: 1em 0 2em;
+    padding: 0.6em 1.8em;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+}
+
+
+.comment-section {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.comment-section h4 {
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.comment-form input,
+.comment-form textarea {
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.comment-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+
+.comments-list {
+    margin-top: 1em;
+}
+
+.comment {
+    margin-top: 0.5em;
+    padding: 0.5em;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.comment strong {
+    display: block;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 0.2em;
+}
+
+.delete-comment {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 0.3em 0.6em;
+    margin-top: 0.5em;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.delete-comment:hover {
+    background-color: #e60000;
+}
